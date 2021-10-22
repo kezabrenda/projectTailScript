@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+    <title>Book Space</title>
+
+    <style>
+        * {
+            transition: 0.2s all;
+        }
+        html {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex justify-center mt-8">
+        <h1 class="text-center text-4xl text-indigo-600 uppercase">
+            BookSpace
+        </h1>
+    </div>
+    <div class="flex justify-center m-4">
+        <div class="md:flex items-center space-x-16">
+                <button id="allBooks"
+                    class="py-4 px-2 text-indigo-500 border-b-4 border-indigo-500 font-semibold">
+                    All books
+                </button>
+                <button id="writtenByMoreThanOneAuthor"
+                    class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-500 ">
+                    Written by more than one Author
+                </button>
+                <button id="publishedFrom2010ToNow"
+                    class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-500 ">
+                    Published from 2010 to Now
+                </button>
+        </div>
+    </div>
+
+    <div id="bookList" class="m-24 bg-gray-200 p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+        <p class="text-center">Click "All books" to see your library.</p>
+    </div>
+
+    <img src="" id="pic" alt="">
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+</body>
+</html>
